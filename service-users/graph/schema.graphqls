@@ -1,0 +1,12 @@
+# GraphQL schema example
+#
+# https://gqlgen.com/getting-started/
+
+type User @key(fields: "id") {
+  id: ID!
+  name: String!
+}
+
+type Query {
+  user: User
+}
